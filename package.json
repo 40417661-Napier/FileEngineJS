@@ -6,12 +6,18 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "errorhandler": "^1.5.0",
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
     "find-in-files": "^0.5.0",
     "fs": "0.0.1-security",
     "handlebars": "^4.0.12",
     "http": "0.0.0",
-    "nodemon": "^1.18.9"
+    "mongoose": "^5.4.5",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
