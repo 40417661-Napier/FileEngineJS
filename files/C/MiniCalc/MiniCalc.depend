@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1543327528 source:/home/ubuntu/Desktop/C/MiniCalc/addnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1543327576 source:/home/ubuntu/Desktop/C/MiniCalc/main.c
+	<stdio.h>
+	<stdlib.h>
+

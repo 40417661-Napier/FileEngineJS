@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Login</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+.login-page {
+    padding: 4% 0 0;
+    margin: auto;
+}
+.infoForm {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.managementForm {
+    z-index: 1;
+    background: #FFFFFF;
+    width: 810px;
+    padding: 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin: 0 auto 20px;
+    text-align: center;
+}
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: rgb(238, 238, 238);
+    color: #000;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0; /* 5a 72 fd */
+    background: #94ff69b7;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #93ff69;
+    
+}
+.form .message {
+    margin: 15px 0 0;
+    color: #000;
+    font-size: 12px;
+}
+.form .message a {
+    color: #93ff69;
+    text-decoration: none;
+}
+.managementForm .message {
+    margin: 15px 0 0;
+    color: #000;
+    font-size: 12px;
+}
+.managementForm .message a {
+    color: #93ff69;
+    text-decoration: none;
+}
+body {
+    background: #93ff69;
+    /* fallback for old browsers */
+    font-family: "Roboto", sans-serif;
+}
+    </style>
+
+</head>
+
+<body>
+    <br>
+    <br>
+    <div class="login-page">
+        <div class="infoForm">
+            keyword finder JS
+        </div>
+        <div class="form">
+            <h1>Search</h1>
+            <form method="post" action="filesFind" name="login" class="login-form">
+                <input type="text" name="query" placeholder="Search Term" required />
+                <button onclick="">GO</button>
+            </form><br>
+            <br>
+        </div>
+        
+    </div>
+    
+</body>
+
+</html>
