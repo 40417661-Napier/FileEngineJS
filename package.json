@@ -1,36 +1,21 @@
 {
-  "name": "fileenginejs",
+  "name": "nodeserver",
   "version": "1.0.0",
-  "description": "File based search engine project",
+  "description": "site for adding files and searching for sample code",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
-    "cors": "^2.8.5",
-    "errorhandler": "^1.5.0",
     "express": "^4.16.4",
-    "express-session": "^1.15.6",
     "find-in-files": "^0.5.0",
     "fs": "0.0.1-security",
     "handlebars": "^4.0.12",
     "http": "0.0.0",
-    "mongoose": "^5.4.5",
-    "morgan": "^1.9.1",
-    "nodemon": "^1.18.9",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/40417661-Napier/FileEngineJS.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/40417661-Napier/FileEngineJS/issues"
-  },
-  "homepage": "https://github.com/40417661-Napier/FileEngineJS#readme"
+    "nodemon": "^1.18.9"
+  }
 }

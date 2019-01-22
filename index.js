@@ -48,7 +48,7 @@ app.post("/filesFind", (req, res) => {
         };
 
 
-        try { //start landing page compilationrs
+        try { //start landing page compilation
             var src = fs.readFileSync("./html/results.html");
             src = src.toString();
         } catch (error) {
@@ -56,7 +56,7 @@ app.post("/filesFind", (req, res) => {
         }
         var template = handlebars.compile(src);
         var data = {
-            "resultsNum": numFound.length,
+            "resultsNum": 2,
             "table": tablePass
         };
         result = template(data);
@@ -68,7 +68,24 @@ app.post("/filesFind", (req, res) => {
 
 });
 
-app.get("/", (req, res) => {
+app.get("/", (req,res) => {
+    // https://medium.freecodecamp.org/learn-how-to-handle-authentication-with-node-using-passport-js-4a56ed18e81e
+    try { //start landing page compilation
+        var src = fs.readFileSync("./html/index.html");
+        src = src.toString();
+    } catch (error) {
+        console.log(error);
+    }
+    var template = handlebars.compile(src);
+    var data = {
+
+    };
+    result = template(data);
+
+    res.send(result) //shows the user the login page from the src file location
+})
+
+app.get("/login", (req, res) => {
     try { //start landing page compilation
         var src = fs.readFileSync("./html/index.html");
         src = src.toString();
@@ -101,7 +118,7 @@ app.post("/preview", (req, res) => {
     res.send(result) //shows the user the login page from the src file location
 })
 
-app.get('/preview/*', function (req, res) {
+app.get('*', function (req, res) {
     //what to do with a url that doesnt exist!
     
     var url = req.url;
