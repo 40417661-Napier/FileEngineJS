@@ -120,7 +120,7 @@ app.post("/preview", (req, res) => {
 
 app.get('*', function (req, res) {
     //what to do with a url that doesnt exist!
-    
+
     var url = req.url;
     //console.log(url);
     url = url.split("/preview");

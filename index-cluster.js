@@ -49,6 +49,12 @@ if (cluster.isMaster) {
         var localLocation = [];
         var result;
 
+// try replace find in files with own regex algorithm
+// use io to open each file in directory, search (using regex) for term and keep log of occurences (filename and number of occurences)
+// go into each directory available and repeat, writing to list / array of results?
+
+// either that, or figure out processes / child processes to make sure searches don't queue when large amounts of searches are being
+// performed simultaneously
 
         findInFiles.find(finding, "./files/", 'n+').then(function (results) {
             for (var result in results) {
